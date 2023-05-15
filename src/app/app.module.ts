@@ -24,6 +24,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
