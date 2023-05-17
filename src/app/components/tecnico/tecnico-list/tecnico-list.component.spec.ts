@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TecnicoListComponent } from './tecnico-list.component';
 
 describe('TecnicoListComponent', () => {
