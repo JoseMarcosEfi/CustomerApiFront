@@ -31,6 +31,8 @@ import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { timeout } from 'rxjs';
+import { CustomerListComponent } from './components/customer-list/customer-list.component';
+
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { timeout } from 'rxjs';
     HomeComponent,
     HeaderComponent,
     TecnicoListComponent,
-    LoginComponent
+    LoginComponent,
+    CustomerListComponent,
   ],
   imports: [
     BrowserModule,

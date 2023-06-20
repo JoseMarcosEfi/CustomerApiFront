@@ -4,13 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { CustomerListComponent } from './components/customer-list/customer-list.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {
-    path: '', component: NavComponent, children: [
+    path: '',  component: NavComponent, children: [
       { path: 'home', component: HomeComponent },
-      {path: 'tecnicos', component: TecnicoListComponent}
+      { path: 'tecnicos', component: TecnicoListComponent },
+      { path: 'customer', component: CustomerListComponent}
     ]
   }
 ];
