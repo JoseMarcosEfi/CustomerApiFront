@@ -14,7 +14,7 @@ export class CustomerListComponent implements OnInit{
 
   ELEMENT_DATA: Customer[] =[]
    
-  displayedColumns: string[] = ['cpf', 'name', 'email', 'password'];
+  displayedColumns: string[] = ['cpf', 'name', 'email', 'password', 'action'];
   dataSource= new MatTableDataSource<Customer>(this.ELEMENT_DATA);
   
   constructor(
@@ -36,6 +36,10 @@ export class CustomerListComponent implements OnInit{
       this.ELEMENT_DATA = resposta
       this.dataSource = new MatTableDataSource<Customer>(resposta);
     });
- }
+  }
+   applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
    
 }
