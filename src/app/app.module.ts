@@ -31,8 +31,9 @@ import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { timeout } from 'rxjs';
-import { CustomerListComponent } from './components/customer-list/customer-list.component';
+import { CustomerListComponent } from './components/customer/customer-list/customer-list.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
+import { CustomerCreateComponent } from './components/customer/customer-create/customer-create.component';
 
 
 
@@ -46,6 +47,7 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
     TecnicoListComponent,
     LoginComponent,
     CustomerListComponent,
+    CustomerCreateComponent,
   ],
   imports: [
     BrowserModule,
