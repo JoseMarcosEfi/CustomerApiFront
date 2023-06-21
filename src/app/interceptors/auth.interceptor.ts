@@ -22,11 +22,11 @@ export class AuthInterceptor implements HttpInterceptor {
       return next.handle(request);
   }
 }
-  export const AuthInterceptorProvider = [
-    {
-      provide: HTTP_INTERCEPTORS,
-      userClass: AuthInterceptor,
-      multi: true
-    }
-  ]
+export const AuthInterceptorProvider = [
+  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }
+];
 

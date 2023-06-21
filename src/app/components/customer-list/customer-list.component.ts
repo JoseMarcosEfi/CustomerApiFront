@@ -1,14 +1,8 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
-import { MatButtonModule } from '@angular/material/button';
 import { Customer } from 'src/app/models/customer'
-import { HttpClient } from '@angular/common/http';
 import { MatPaginator } from '@angular/material/paginator';
-import { Router } from '@angular/router';
-
-
-
-
+import { CustomerService } from 'src/app/services/customer.service';
 
 @Component({
   selector: 'app-customer-list',
@@ -17,36 +11,31 @@ import { Router } from '@angular/router';
 })
   
 export class CustomerListComponent implements OnInit{
+
+  ELEMENT_DATA: Customer[] =[]
    
-  displayedColumns: string[] = ['cpf', 'name', 'email', 'password', 'action'];
-  dataSource: MatTableDataSource<Customer>;
+  displayedColumns: string[] = ['cpf', 'name', 'email', 'password'];
+  dataSource= new MatTableDataSource<Customer>(this.ELEMENT_DATA);
   
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(
+    private service: CustomerService
+  ) { }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  ngOnInit(): void {   
-    this.dataSource = new MatTableDataSource<Customer>();
-    this.getDataFromApi();
+  ngOnInit(): void { 
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+    this.findAll();
   }
 
-  getDataFromApi() {
-    this.http.get<Customer[]>('http://localhost:8080/customer').subscribe(data => {
-      this.dataSource.data = data;
+  findAll() {
+    this.service.findAll().subscribe(resposta => {
+      this.ELEMENT_DATA = resposta
+      this.dataSource = new MatTableDataSource<Customer>(resposta);
     });
-  }
-
-  deletarCustom(customerId: string) : void{
-    this.http.delete('http://localhost:8080/customer').subscribe(() => {
-      this.router.navigateByUrl('/customer-list', { skipLocationChange: true }).then(() => {
-        this.router.navigate(['customer-list']);
-      });
-    });
-  }
-  addCustomer():void{}
+ }
    
 }
