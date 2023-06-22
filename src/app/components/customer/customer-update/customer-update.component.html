@@ -1,6 +1,6 @@
 <div class="container mat-elevation-z8">
     <form class="form">
-        <h1 class="fullWidth">Register customer</h1>
+        <h1 class="fullWidth">Update Customer</h1>
         <img class="fullWidth" src="assets/img/customer-create.svg" alt="customercreate">
 
         <section class="section">
@@ -38,9 +38,9 @@
             <mat-icon matSuffix>password</mat-icon>
         </mat-form-field>
 
-        <button (click)="create()" [disabled]="!validaCampos()" class="fullWidth mat-elevation-z4" mat-flat-button
+        <button (click)="update()" [disabled]="!validaCampos()" class="fullWidth mat-elevation-z4" mat-flat-button
             color="primary">Register</button>
-        <button routerLink="../" class="fullWidth mat-elevation-z4" mat-stroked-button color="warn">Cancel</button>
+        <button routerLink="../../" class="fullWidth mat-elevation-z4" mat-stroked-button color="warn">Cancel</button>
     </form>
     <p class="fullWidth">By José Marcos</p>
 </div>

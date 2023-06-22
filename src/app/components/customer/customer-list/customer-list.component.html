@@ -41,10 +41,13 @@
             <ng-container matColumnDef="action">
                 <th mat-header-cell *matHeaderCellDef>Action</th>
                 <td mat-cell *matCellDef="let customer">
-                    <a routerLink="">
+                    <a routerLink="update/{{ customer.id }}">
                         <i class="material-icons edit">edit</i>
+                    </a>
+                    <a routerLink="">
                         <i class="material-icons delete">delete</i>
                     </a>
+
                 </td>
             </ng-container>
 
