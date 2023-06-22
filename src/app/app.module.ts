@@ -36,6 +36,7 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { CustomerCreateComponent } from './components/customer/customer-create/customer-create.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { CustomerUpdateComponent } from './components/customer/customer-update/customer-update.component';
+import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
 
 
 
@@ -51,6 +52,7 @@ import { CustomerUpdateComponent } from './components/customer/customer-update/c
     CustomerListComponent,
     CustomerCreateComponent,
     CustomerUpdateComponent,
+    CustomerDeleteComponent,
   ],
   imports: [
     BrowserModule,
