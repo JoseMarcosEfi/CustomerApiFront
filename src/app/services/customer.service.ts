@@ -14,4 +14,7 @@ export class CustomerService {
   findAll(): Observable<Customer[]>{
     return this.http.get<Customer[]>(`${API_CONFIG.baseUrl}/customer`);
   }
+  create(customer: Customer): Observable<Customer>{
+    return this.http.post<Customer>(`${API_CONFIG.baseUrl}/customer`, customer);
+  }
 }

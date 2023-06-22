@@ -34,6 +34,7 @@ import { timeout } from 'rxjs';
 import { CustomerListComponent } from './components/customer/customer-list/customer-list.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { CustomerCreateComponent } from './components/customer/customer-create/customer-create.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 
@@ -77,7 +78,8 @@ import { CustomerCreateComponent } from './components/customer/customer-create/c
       timeOut: 4000,
       closeButton: true,
       progressBar: true
-})
+    }),
+    NgxMaskModule.forRoot()
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
