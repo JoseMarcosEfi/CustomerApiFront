@@ -17,3 +17,9 @@ h1{
     text-align: center;
     margin-bottom: 2rem;
 }
+.edit{
+    color: rgb(139, 39, 232);
+}
+.delete {
+    color: red;
+}
