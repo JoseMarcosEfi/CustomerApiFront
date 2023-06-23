@@ -16,7 +16,8 @@ p {
 
 img {
     height: 14rem;
-    margin: auto;
+    margin: auto 2rem 1rem auto;
+    
 }
 
 .section {
