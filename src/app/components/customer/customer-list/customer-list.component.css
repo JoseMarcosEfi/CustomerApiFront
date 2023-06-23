@@ -19,7 +19,13 @@ h1{
 }
 .edit{
     color: rgb(139, 39, 232);
+    margin: 5px;
 }
 .delete {
     color: red;
+    margin: 5px;
+}
+.visibility{
+    color: blue;
+    margin: 5px;
 }

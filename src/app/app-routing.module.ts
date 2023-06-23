@@ -7,6 +7,7 @@ import { CustomerListComponent } from './components/customer/customer-list/custo
 import { CustomerCreateComponent } from './components/customer/customer-create/customer-create.component';
 import { CustomerUpdateComponent } from './components/customer/customer-update/customer-update.component';
 import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
+import { CustomerViewComponent } from './components/customer/customer-view/customer-view.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
       { path: 'customer', component: CustomerListComponent },
       { path: 'customer/create', component: CustomerCreateComponent },
       { path: 'customer/update/:id', component: CustomerUpdateComponent },
-      { path: 'customer/delete/:id', component: CustomerDeleteComponent}
+      { path: 'customer/delete/:id', component: CustomerDeleteComponent },
+      { path: 'customer/update/:id', component: CustomerViewComponent }
     ]
   }
 ];
