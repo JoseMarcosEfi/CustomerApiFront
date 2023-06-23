@@ -9,6 +9,7 @@ import { CustomerUpdateComponent } from './components/customer/customer-update/c
 import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
 import { CustomerViewComponent } from './components/customer/customer-view/customer-view.component';
 
+
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {
