@@ -10,6 +10,6 @@ export class NavComponent implements OnInit{
 
   constructor(private router: Router) { }
   ngOnInit(): void {
-      this.router.navigate(['customer/update/4'])
+      this.router.navigate(['home'])
   }
 }

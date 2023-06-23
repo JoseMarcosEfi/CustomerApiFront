@@ -1,16 +1,20 @@
 .container{
     height: 100%;
+background-color: #001220;
+    background-image: linear-gradient(180deg, #001220 45%, #731621 50%, #001220 53%);
+
 }
 
 .sidenav{
     width: 13rem;
     color: greenyellow;
-    background: radial-gradient(circle, rgba(130, 166, 89, 1) 0%, rgba(43, 68, 128, 1) 100%);
+    background-image: url("../../../assets/img/moon-unsplash.jpg");
+    border-right: 1px  solid #d26a50;
 }
 img{
-    width: 100%;
-    height: 5rem;
-    margin: 0.5rem auto 0.5rem auto;
+    width: 30%;
+    height: auto;
+    margin: 3rem 3rem 3rem 4rem;
 }
 
 .sidenav a {
@@ -21,8 +25,9 @@ img{
 }
 .menu{
     margin: 1rem 0 0 1rem;
-    color: black;
-    background: radial-gradient(circle, rgba(130, 166, 89, 1) 0%, rgba(43, 68, 128, 1) 100%);
+    color: white;
+    background-image: url("../../../assets/img/moon-orange.svg");
+    
 }
 
 
