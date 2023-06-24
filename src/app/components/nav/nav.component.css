@@ -1,7 +1,6 @@
 .container{
     height: 100%;
 background-color: #001220;
-    background-image: linear-gradient(180deg, #001220 45%, #731621 50%, #001220 53%);
 
 }
 
@@ -25,9 +24,8 @@ img{
 }
 .menu{
     margin: 1rem 0 0 1rem;
-    color: white;
+    color: #d26a50;
     background-image: url("../../../assets/img/moon-orange.svg");
-    
 }
 
 
