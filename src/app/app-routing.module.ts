@@ -8,6 +8,7 @@ import { CustomerCreateComponent } from './components/customer/customer-create/c
 import { CustomerUpdateComponent } from './components/customer/customer-update/customer-update.component';
 import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
 import { CustomerViewComponent } from './components/customer/customer-view/customer-view.component';
+import { StockListComponent } from './components/stock/stock-list/stock-list.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
       { path: 'customer/create', component: CustomerCreateComponent },
       { path: 'customer/update/:id', component: CustomerUpdateComponent },
       { path: 'customer/delete/:id', component: CustomerDeleteComponent },
-      { path: 'customer/view/:id', component: CustomerViewComponent }
+      { path: 'customer/view/:id', component: CustomerViewComponent },
+      { path: 'stock', component: StockListComponent}
     ]
   }
 ];
