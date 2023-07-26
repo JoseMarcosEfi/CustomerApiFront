@@ -37,6 +37,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { CustomerUpdateComponent } from './components/customer/customer-update/customer-update.component';
 import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
 import { CustomerViewComponent } from './components/customer/customer-view/customer-view.component';
+import { StockListComponent } from './components/stock/stock-list/stock-list.component';
 
 
 
@@ -53,6 +54,7 @@ import { CustomerViewComponent } from './components/customer/customer-view/custo
     CustomerUpdateComponent,
     CustomerDeleteComponent,
     CustomerViewComponent,
+    StockListComponent,
   ],
   imports: [
     BrowserModule,
