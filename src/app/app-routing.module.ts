@@ -9,19 +9,21 @@ import { CustomerUpdateComponent } from './components/customer/customer-update/c
 import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
 import { CustomerViewComponent } from './components/customer/customer-view/customer-view.component';
 import { StockListComponent } from './components/stock/stock-list/stock-list.component';
+import { StockViewComponent } from './components/stock/stock-view/stock-view.component';
 
 
 const routes: Routes = [
-  {path: 'login', component:LoginComponent},
+  { path: 'login', component: LoginComponent },
   {
-    path: '',  component: NavComponent, children: [
+    path: '', component: NavComponent, children: [
       { path: 'home', component: HomeComponent },
       { path: 'customer', component: CustomerListComponent },
       { path: 'customer/create', component: CustomerCreateComponent },
       { path: 'customer/update/:id', component: CustomerUpdateComponent },
       { path: 'customer/delete/:id', component: CustomerDeleteComponent },
       { path: 'customer/view/:id', component: CustomerViewComponent },
-      { path: 'stock', component: StockListComponent}
+      { path: 'stock', component: StockListComponent },
+      { path: 'stock/view/:id', component: StockViewComponent }
     ]
   }
 ];

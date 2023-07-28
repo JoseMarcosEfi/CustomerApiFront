@@ -6,10 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent implements OnInit{
+export class NavComponent implements OnInit {
 
   constructor(private router: Router) { }
   ngOnInit(): void {
-      this.router.navigate(['stock'])
+    this.router.navigate(['stock/view/6'])
   }
 }
