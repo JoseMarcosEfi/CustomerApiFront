@@ -38,6 +38,7 @@ import { CustomerUpdateComponent } from './components/customer/customer-update/c
 import { CustomerDeleteComponent } from './components/customer/customer-delete/customer-delete.component';
 import { CustomerViewComponent } from './components/customer/customer-view/customer-view.component';
 import { StockListComponent } from './components/stock/stock-list/stock-list.component';
+import { StockViewComponent } from './components/stock/stock-view/stock-view.component';
 
 
 
@@ -55,6 +56,7 @@ import { StockListComponent } from './components/stock/stock-list/stock-list.com
     CustomerDeleteComponent,
     CustomerViewComponent,
     StockListComponent,
+    StockViewComponent,
   ],
   imports: [
     BrowserModule,
