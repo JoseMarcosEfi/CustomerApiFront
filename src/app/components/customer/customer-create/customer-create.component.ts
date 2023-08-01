@@ -20,7 +20,7 @@ export class CustomerCreateComponent {
     password: ''
   }
 
-  nome: FormControl = new FormControl(null, Validators.minLength(3))
+  name: FormControl = new FormControl(null, Validators.minLength(3))
   cpf: FormControl = new FormControl(null, Validators.required)
   email: FormControl = new FormControl(null, Validators.email)
   password: FormControl = new FormControl(null, Validators.minLength(3))
@@ -47,7 +47,7 @@ export class CustomerCreateComponent {
     });
   }
   validaCampos(): boolean {
-    return this.nome.valid && this.cpf.valid
+    return this.name.valid && this.cpf.valid
       && this.email.valid && this.password.valid;
   }
 
