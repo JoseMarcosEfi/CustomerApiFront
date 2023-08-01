@@ -43,6 +43,7 @@ import { StockCreateComponent } from './components/stock/stock-create/stock-crea
 import { StockUpdateComponent } from './components/stock/stock-update/stock-update.component';
 import { StockDeleteComponent } from './components/stock/stock-delete/stock-delete.component';
 import { TechnicianListComponent } from './components/technician/technician-list/technician-list.component';
+import { TechnicianCreateComponent } from './components/technician/technician-create/technician-create.component';
 
 
 
@@ -66,6 +67,7 @@ import { TechnicianListComponent } from './components/technician/technician-list
     StockUpdateComponent,
     StockDeleteComponent,
     TechnicianListComponent,
+    TechnicianCreateComponent,
   ],
   imports: [
     BrowserModule,
