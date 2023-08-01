@@ -18,13 +18,17 @@ export class StockCreateComponent {
     valueBuy: null,
     type: null
   }
-  currencyCode: string = 'BRL';
-  currencyDisplay: string = 'simbol'
 
   description: FormControl = new FormControl(null, [Validators.minLength(3), Validators.required])
   amount: FormControl = new FormControl(null, [Validators.required, Validators.min(0), Validators.max(1000)])
   valueBuy: FormControl = new FormControl(null, [Validators.required, Validators.min(0), Validators.max(100000)])
-  type: FormControl = new FormControl(null, [Validators.required, Validators.min(0), Validators.max(2)])
+  type: FormControl = new FormControl(null, Validators.required)
+
+  typeOptions = [
+    { value: 0, viewValue: 'TOOL' },
+    { value: 1, viewValue: 'PART' },
+    { value: 2, viewValue: 'OTHER' }
+  ]
 
   constructor(
     private service: StockService,

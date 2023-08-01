@@ -1,13 +1,20 @@
 <div class="container mat-elevation-z8">
     <form class="form">
         <h1 class="fullWidth">Create Stock</h1>
-        <img class="fullWidth" src="assets/img/customer-create.svg" alt="stockcreate">
+        <img class="fullWidth" src="assets/img/stock-create-icon2.svg" alt="stockcreate">
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Description</mat-label>
             <input [(ngModel)]="stock.description" name="description" [formControl]="description" required matInput
-                placeholder="Ex.. spring" maxlength="30">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                placeholder="Ex.. spring" maxlength="30" minlength="3">
+            <mat-icon matSuffix>history_edu</mat-icon>
+            <mat-error *ngIf="description.invalid && (description.dirty || description.touched)">
+                <span *ngIf="description.errors?.['required']">This field is required.</span>
+                <span *ngIf="description.errors?.['minlength']">You have reached the minimum number of
+                    characters.</span>
+                <span *ngIf="description.errors?.['maxlength']">You have reached the maximum number of
+                    characters.</span>
+            </mat-error>
         </mat-form-field>
 
         <mat-form-field class="fullWidth" appearance="fill">
@@ -15,23 +22,37 @@
             <input [(ngModel)]="stock.amount" type="number" min="0" max="1000" name="amount" [formControl]="amount"
                 required matInput placeholder="0">
             <mat-icon matSuffix>pin</mat-icon>
+            <mat-error *ngIf="amount.invalid && (amount.dirty || amount.touched)">
+                <span *ngIf="amount.errors?.['required']">This field is required.</span>
+                <span *ngIf="amount.errors?.['min']">The value must be greater than or equal to 0.</span>
+                <span *ngIf="amount.errors?.['max']">The value must be less than or equal to 1000.</span>
+                <span *ngIf="amount.errors?.['maxlength']">The value must be less than or equal to 100000.</span>
+            </mat-error>
         </mat-form-field>
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>ValueBuy</mat-label>
-            <input type="number" min="0" max="100000" name="valueBuy" [formControl]="valueBuy" required matInput
-                placeholder="0.00" [currency]="currencyCode" [currencyDisplay]="currencyDisplay">
-            <mat-icon matSuffix>mail</mat-icon>
-
+            <input [(ngModel)]="stock.valueBuy" type="number" min="0" max="100000" name="valueBuy"
+                [formControl]="valueBuy" required matInput placeholder="0.00">
+            <mat-icon matSuffix>attach_money</mat-icon>
+            <mat-error *ngIf="valueBuy.invalid && (valueBuy.dirty || valueBuy.touched)">
+                <span *ngIf="valueBuy.errors?.['required']">This field is required.</span>
+                <span *ngIf="valueBuy.errors?.['min']">The value must be greater than or equal to 0.</span>
+                <span *ngIf="valueBuy.errors?.['max']">The value must be less than or equal to 100000.</span>
+                <span *ngIf="valueBuy.errors?.['maxlength']">The value must be less than or equal to 100000.</span>
+            </mat-error>
         </mat-form-field>
-
-
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Type</mat-label>
-            <input [(ngModel)]="stock.type" name="type" [formControl]="type" required matInput
-                placeholder="Placeholder">
-            <mat-icon matSuffix>password</mat-icon>
+            <mat-select [(ngModel)]="stock.type" name="type" [formControl]="type" required placeholder="Select Type">
+                <mat-option *ngFor="let option of typeOptions" [value]="option.value">{{ option.viewValue }}
+                </mat-option>
+            </mat-select>
+            <mat-icon matSuffix>construction</mat-icon>
+            <mat-error *ngIf="type.invalid && (type.dirty || type.touched)">
+                <span *ngIf="type.errors?.['required']">This field is required.</span>
+            </mat-error>
         </mat-form-field>
 
         <button (click)="create()" [disabled]="!validaCampos()" class="fullWidth mat-elevation-z4" mat-flat-button
