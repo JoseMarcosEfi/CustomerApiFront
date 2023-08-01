@@ -13,6 +13,7 @@ import { StockViewComponent } from './components/stock/stock-view/stock-view.com
 import { StockCreateComponent } from './components/stock/stock-create/stock-create.component';
 import { StockUpdateComponent } from './components/stock/stock-update/stock-update.component';
 import { StockDeleteComponent } from './components/stock/stock-delete/stock-delete.component';
+import { TechnicianListComponent } from './components/technician/technician-list/technician-list.component';
 
 
 const routes: Routes = [
@@ -29,7 +30,8 @@ const routes: Routes = [
       { path: 'stock/view/:id', component: StockViewComponent },
       { path: 'stock/create', component: StockCreateComponent },
       { path: 'stock/update/:id', component: StockUpdateComponent },
-      { path: 'stock/delete/:id', component: StockDeleteComponent }
+      { path: 'stock/delete/:id', component: StockDeleteComponent },
+      { path: 'technician', component: TechnicianListComponent }
     ]
   }
 ];
