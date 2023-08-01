@@ -41,6 +41,7 @@ import { StockListComponent } from './components/stock/stock-list/stock-list.com
 import { StockViewComponent } from './components/stock/stock-view/stock-view.component';
 import { StockCreateComponent } from './components/stock/stock-create/stock-create.component';
 import { StockUpdateComponent } from './components/stock/stock-update/stock-update.component';
+import { StockDeleteComponent } from './components/stock/stock-delete/stock-delete.component';
 
 
 
@@ -61,6 +62,7 @@ import { StockUpdateComponent } from './components/stock/stock-update/stock-upda
     StockViewComponent,
     StockCreateComponent,
     StockUpdateComponent,
+    StockDeleteComponent,
   ],
   imports: [
     BrowserModule,

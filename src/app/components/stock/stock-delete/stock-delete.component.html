@@ -1,0 +1,28 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1 class="fullWidth">Delete Stock</h1>
+        <img class="fullWidth" src="assets/img/stock-delete.svg" alt="customercreate">
+
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Description</mat-label>
+            <input [(ngModel)]="stock.description" name="description" [disabled]="true" matInput>
+            <mat-icon matSuffix>history_edu</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Amount</mat-label>
+            <input [(ngModel)]="stock.amount" name="amount" [disabled]="true" matInput>
+            <mat-icon matSuffix>pin</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Type</mat-label>
+            <input [(ngModel)]="stock.type" name="type" [disabled]="true" matInput>
+            <mat-icon matSuffix>pin</mat-icon>
+        </mat-form-field>
+
+        <button (click)="delete()" class="fullWidth mat-elevation-z4" mat-flat-button color="primary">Delete</button>
+        <button routerLink="../../" class="fullWidth mat-elevation-z4" mat-stroked-button color="warn">Cancel</button>
+    </form>
+    <p class="fullWidth">By José Marcos</p>
+</div>
