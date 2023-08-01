@@ -15,6 +15,7 @@ import { StockUpdateComponent } from './components/stock/stock-update/stock-upda
 import { StockDeleteComponent } from './components/stock/stock-delete/stock-delete.component';
 import { TechnicianListComponent } from './components/technician/technician-list/technician-list.component';
 import { TechnicianCreateComponent } from './components/technician/technician-create/technician-create.component';
+import { TechnicianUpdateComponent } from './components/technician/technician-update/technician-update.component';
 
 
 const routes: Routes = [
@@ -33,7 +34,8 @@ const routes: Routes = [
       { path: 'stock/update/:id', component: StockUpdateComponent },
       { path: 'stock/delete/:id', component: StockDeleteComponent },
       { path: 'technician', component: TechnicianListComponent },
-      { path: 'technician/create', component: TechnicianCreateComponent }
+      { path: 'technician/create', component: TechnicianCreateComponent },
+      { path: 'technician/update/:id', component: TechnicianUpdateComponent }
     ]
   }
 ];

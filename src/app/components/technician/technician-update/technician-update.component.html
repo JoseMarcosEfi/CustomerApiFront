@@ -1,12 +1,12 @@
 <div class="container mat-elevation-z8">
     <form class="form">
-        <h1 class="fullWidth">Update Customer</h1>
+        <h1 class="fullWidth">Update Technician</h1>
         <div class="imagen-update">
-            <img src=" assets/img/customer-create.svg" alt="customerupdate">
+            <img src=" assets/img/technician-update.svg" alt="Technicianupdate">
         </div>
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Name</mat-label>
-            <input [(ngModel)]="customer.name" name="name" [formControl]="name" required matInput
+            <input [(ngModel)]="technician.name" name="name" [formControl]="name" required matInput
                 placeholder="Ex.. Ze das couves" maxlength="50">
             <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             <mat-error *ngIf="name.invalid && (name.dirty || name.touched)">
@@ -20,7 +20,7 @@
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>CPF</mat-label>
-            <input [(ngModel)]="customer.cpf" name="cpf" min="14" [formControl]="cpf" required matInput
+            <input [(ngModel)]="technician.cpf" name="cpf" min="14" [formControl]="cpf" required matInput
                 placeholder="000.000.000-00" mask="000.000.000-00">
             <mat-icon matSuffix>pin</mat-icon>
             <mat-error *ngIf="cpf.invalid && (cpf.dirty || cpf.touched)">
@@ -31,7 +31,7 @@
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Email</mat-label>
-            <input [(ngModel)]="customer.email" name="email" type="email" [formControl]="email" required matInput
+            <input [(ngModel)]="technician.email" name="email" type="email" [formControl]="email" required matInput
                 placeholder="Ex.. Fulano1234@gmail.com">
             <mat-icon matSuffix>mail</mat-icon>
             <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
@@ -42,8 +42,8 @@
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Password</mat-label>
-            <input [(ngModel)]="customer.password" name="password" maxlength="12" minlength="3" [formControl]="password"
-                required type="password" matInput placeholder="Placeholder">
+            <input [(ngModel)]="technician.password" name="password" maxlength="12" minlength="3"
+                [formControl]="password" required type="password" matInput placeholder="Placeholder">
             <mat-icon matSuffix>password</mat-icon>
             <mat-error *ngIf="password.invalid && (password.dirty || password.touched)">
                 <span *ngIf="password.errors?.['required']">This field is required.</span>
