@@ -40,6 +40,7 @@ import { CustomerViewComponent } from './components/customer/customer-view/custo
 import { StockListComponent } from './components/stock/stock-list/stock-list.component';
 import { StockViewComponent } from './components/stock/stock-view/stock-view.component';
 import { StockCreateComponent } from './components/stock/stock-create/stock-create.component';
+import { StockUpdateComponent } from './components/stock/stock-update/stock-update.component';
 
 
 
@@ -59,6 +60,7 @@ import { StockCreateComponent } from './components/stock/stock-create/stock-crea
     StockListComponent,
     StockViewComponent,
     StockCreateComponent,
+    StockUpdateComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { CustomerViewComponent } from './components/customer/customer-view/custo
 import { StockListComponent } from './components/stock/stock-list/stock-list.component';
 import { StockViewComponent } from './components/stock/stock-view/stock-view.component';
 import { StockCreateComponent } from './components/stock/stock-create/stock-create.component';
+import { StockUpdateComponent } from './components/stock/stock-update/stock-update.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
       { path: 'customer/view/:id', component: CustomerViewComponent },
       { path: 'stock', component: StockListComponent },
       { path: 'stock/view/:id', component: StockViewComponent },
-      { path: 'stock/create', component: StockCreateComponent }
+      { path: 'stock/create', component: StockCreateComponent },
+      { path: 'stock/update/:id', component: StockUpdateComponent }
     ]
   }
 ];

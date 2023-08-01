@@ -29,9 +29,9 @@ export class CustomerCreateComponent {
     private service: CustomerService,
     private toast: ToastrService,
     private router: Router
-  ) {  }
+  ) { }
 
-  create(): void{
+  create(): void {
     this.service.create(this.customer).subscribe(() => {
       this.toast.success('Successfully registered customer ', 'Register');
       this.router.navigate(['customer'])
@@ -43,23 +43,9 @@ export class CustomerCreateComponent {
       } else {
         this.toast.error(ex.error.message);
       }
-      
-  });
+
+    });
   }
-  /*
-  addPerfil(perfil : any): boolean{
-
-    if(this.customer.perfis.includes(perfil)){
-    this.customer.perfis.splice(this.customer.perfis.indexOf(perfil), 1);
-    }else{
-    this.customer.perfis.push(perfil);
-
-    }
-  }*/
-
-
-
-
   validaCampos(): boolean {
     return this.nome.valid && this.cpf.valid
       && this.email.valid && this.password.valid;

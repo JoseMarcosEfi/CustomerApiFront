@@ -11,7 +11,7 @@ import { CustomerService } from 'src/app/services/customer.service';
   styleUrls: ['./customer-update.component.css']
 })
 export class CustomerUpdateComponent {
-customer: Customer = {
+  customer: Customer = {
     id: '',
     name: '',
     cpf: '',
@@ -31,19 +31,18 @@ customer: Customer = {
     private route: ActivatedRoute,
   ) { }
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.customer.id = this.route.snapshot.paramMap.get('id');
     this.findById();
   }
-  
-  findById(): void{
+
+  findById(): void {
     this.service.findById(this.customer.id).subscribe(resposta => {
-      //resposta.perfis = []
       this.customer = resposta;
     })
   }
 
-  update(): void{
+  update(): void {
     this.service.update(this.customer).subscribe(() => {
       this.toast.success('Successfully updated customer ', 'Update');
       this.router.navigate(['customer'])
@@ -55,8 +54,8 @@ customer: Customer = {
       } else {
         this.toast.error(ex.error.message);
       }
-      
-  });
+
+    });
   }
   validaCampos(): boolean {
     return this.nome.valid && this.cpf.valid
