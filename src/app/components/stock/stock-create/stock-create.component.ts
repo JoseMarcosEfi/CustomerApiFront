@@ -38,11 +38,9 @@ export class StockCreateComponent {
   ngOnInit() {
 
   }
-
-
   create(): void {
     this.service.create(this.stock).subscribe(() => {
-      this.toast.success('Successfully registered stock ', 'Register');
+      this.toast.success('Successfully Created stock ', 'Created');
       this.router.navigate(['stock'])
     }, ex => {
       if (ex.console.error.errors) {
@@ -55,24 +53,12 @@ export class StockCreateComponent {
 
     });
   }
-  /*
-  addPerfil(perfil : any): boolean{
-
-    if(this.customer.perfis.includes(perfil)){
-    this.customer.perfis.splice(this.customer.perfis.indexOf(perfil), 1);
-    }else{
-    this.customer.perfis.push(perfil);
-
-    }
-  }*/
-
-
-
-
   validaCampos(): boolean {
     return this.description.valid && this.amount.valid
       && this.valueBuy.valid && this.type.valid;
   }
+
+
 
 }
 

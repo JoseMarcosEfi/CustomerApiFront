@@ -44,7 +44,7 @@ import { StockCreateComponent } from './components/stock/stock-create/stock-crea
 
 
 @NgModule({
-  schemas: [NO_ERRORS_SCHEMA], // ADICIONADO PARA REMOVER ERRO INEXISTENTE EM TECNICO LIST
+  schemas: [NO_ERRORS_SCHEMA], // ADICIONADO PARA REMOVER ERRO INEXISTENTE EM CUSTOMER LIST
   declarations: [
     AppComponent,
     NavComponent,

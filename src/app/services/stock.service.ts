@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
+import { map } from 'rxjs/operators';
 import { API_CONFIG } from '../config/api.config';
 import { Stock } from '../models/stock';
 
@@ -29,6 +30,13 @@ export class StockService {
     delete(id: any): Observable<Stock> {
         return this.http.delete<Stock>(`${API_CONFIG.baseUrl}/stock/${id}`);
     }
+
+    //isDescriptionDuplicate(description: string): Observable<boolean> {
+    //  return this.http.get<Stock[]>(`${API_CONFIG.baseUrl}/?description/${encodeURIComponent(description)}`)
+    //    .pipe(
+    //      map((stocks) => stocks.length > 0)
+    //);
+    //}
 
 
 
