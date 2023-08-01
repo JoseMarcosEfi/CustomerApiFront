@@ -46,6 +46,7 @@ import { TechnicianListComponent } from './components/technician/technician-list
 import { TechnicianCreateComponent } from './components/technician/technician-create/technician-create.component';
 import { TechnicianUpdateComponent } from './components/technician/technician-update/technician-update.component';
 import { TechnicianViewComponent } from './components/technician/technician-view/technician-view.component';
+import { TechnicianDeleteComponent } from './components/technician/technician-delete/technician-delete.component';
 
 
 
@@ -72,6 +73,7 @@ import { TechnicianViewComponent } from './components/technician/technician-view
     TechnicianCreateComponent,
     TechnicianUpdateComponent,
     TechnicianViewComponent,
+    TechnicianDeleteComponent,
   ],
   imports: [
     BrowserModule,
