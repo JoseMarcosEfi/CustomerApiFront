@@ -1,8 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { Customer } from 'src/app/models/customer'
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
-import { CustomerService } from 'src/app/services/customer.service';
+import { MatPaginator } from '@angular/material/paginator';
 import { Stock } from 'src/app/models/stock';
 import { StockService } from 'src/app/services/stock.service';
 
