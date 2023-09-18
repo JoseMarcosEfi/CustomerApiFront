@@ -11,7 +11,7 @@
     <div>
         <mat-form-field>
             <mat-label>Filter</mat-label>
-            <input matInput (keyup)="applyFilter($event)" placeholder="           Ex: ze das couves" #input>
+            <input matInput (keyup)="applyFilter($event)" placeholder="           Ex: PC QUEBROU" #input>
         </mat-form-field>
     </div>
 
@@ -71,8 +71,9 @@
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
         </table>
-        <mat-paginator [length]="200" [pageSizeOptions]="[3, 10, 50]" aria-label="Select page">
+        <mat-paginator [length]="200" [pageSizeOptions]="[3, 50, 100]" aria-label="Select page">
         </mat-paginator>
+
     </div>
 </div>
 <br />

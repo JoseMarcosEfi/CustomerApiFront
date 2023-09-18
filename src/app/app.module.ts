@@ -11,7 +11,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 // Imports para componentes do Angular Material
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -29,7 +29,6 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
-import { timeout } from 'rxjs';
 import { CustomerListComponent } from './components/customer/customer-list/customer-list.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { CustomerCreateComponent } from './components/customer/customer-create/customer-create.component';
@@ -48,6 +47,7 @@ import { TechnicianUpdateComponent } from './components/technician/technician-up
 import { TechnicianViewComponent } from './components/technician/technician-view/technician-view.component';
 import { TechnicianDeleteComponent } from './components/technician/technician-delete/technician-delete.component';
 import { ServiceCallListComponent } from './components/serviceCall/service-call-list/service-call-list.component';
+import { ServiceCallAddComponent } from './components/serviceCall/service-call-add/service-call-add.component';
 
 
 
@@ -76,6 +76,7 @@ import { ServiceCallListComponent } from './components/serviceCall/service-call-
     TechnicianViewComponent,
     TechnicianDeleteComponent,
     ServiceCallListComponent,
+    ServiceCallAddComponent,
   ],
   imports: [
     BrowserModule,
@@ -100,6 +101,7 @@ import { ServiceCallListComponent } from './components/serviceCall/service-call-
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatPaginatorModule,
     AppRoutingModule,
     ToastrModule.forRoot({
       timeOut: 4000,
