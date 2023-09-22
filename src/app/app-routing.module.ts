@@ -19,6 +19,7 @@ import { TechnicianUpdateComponent } from './components/technician/technician-up
 import { TechnicianViewComponent } from './components/technician/technician-view/technician-view.component';
 import { TechnicianDeleteComponent } from './components/technician/technician-delete/technician-delete.component';
 import { ServiceCallListComponent } from './components/serviceCall/service-call-list/service-call-list.component';
+import { ServiceCallAddComponent } from './components/serviceCall/service-call-add/service-call-add.component';
 
 
 const routes: Routes = [
@@ -41,7 +42,9 @@ const routes: Routes = [
       { path: 'technician/update/:id', component: TechnicianUpdateComponent },
       { path: 'technician/view/:id', component: TechnicianViewComponent },
       { path: 'technician/delete/:id', component: TechnicianDeleteComponent },
-      { path: 'serviceCall', component: ServiceCallListComponent }
+      { path: 'serviceCall', component: ServiceCallListComponent },
+      { path: 'serviceCall/create', component: ServiceCallAddComponent }
+
     ]
   }
 ];

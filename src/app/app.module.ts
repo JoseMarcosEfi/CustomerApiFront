@@ -1,4 +1,4 @@
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -48,6 +48,9 @@ import { TechnicianViewComponent } from './components/technician/technician-view
 import { TechnicianDeleteComponent } from './components/technician/technician-delete/technician-delete.component';
 import { ServiceCallListComponent } from './components/serviceCall/service-call-list/service-call-list.component';
 import { ServiceCallAddComponent } from './components/serviceCall/service-call-add/service-call-add.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { DatePipe } from '@angular/common';
 
 
 
@@ -103,6 +106,9 @@ import { ServiceCallAddComponent } from './components/serviceCall/service-call-a
     MatCardModule,
     MatPaginatorModule,
     AppRoutingModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    DatePipe,
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
@@ -110,7 +116,7 @@ import { ServiceCallAddComponent } from './components/serviceCall/service-call-a
     }),
     NgxMaskModule.forRoot()
   ],
-  providers: [AuthInterceptorProvider],
+  providers: [DatePipe/*, { provide: LOCALE_ID, useValue: "pt" }*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
