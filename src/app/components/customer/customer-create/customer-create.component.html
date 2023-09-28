@@ -42,7 +42,7 @@
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Password</mat-label>
             <input [(ngModel)]="customer.password" name="password" maxlength="12" minlength="3" [formControl]="password"
-                required type="password" matInput placeholder="Placeholder">
+                required type="password" matInput placeholder="Password">
             <mat-icon matSuffix>password</mat-icon>
             <mat-error *ngIf="password.invalid && (password.dirty || password.touched)">
                 <span *ngIf="password.errors?.['required']">This field is required.</span>

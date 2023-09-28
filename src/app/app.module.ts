@@ -51,6 +51,7 @@ import { ServiceCallAddComponent } from './components/serviceCall/service-call-a
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { DatePipe } from '@angular/common';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -80,6 +81,7 @@ import { DatePipe } from '@angular/common';
     TechnicianDeleteComponent,
     ServiceCallListComponent,
     ServiceCallAddComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
