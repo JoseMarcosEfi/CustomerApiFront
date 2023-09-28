@@ -5,11 +5,11 @@ The customerApi project is an ongoing development initiative focused on creating
 # Prints:
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/home.png" alt="home" width="500" height="300">
-    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/list-customer.png" alt="customer-list" width="500" height="300">
-    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/delete.png" alt="delete" width="500" height="300">
-    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/create.png" alt="create" width="500" height="300">
-    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/update.png" alt="update" width="500" height="300">
+    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/home.png" alt="home" width="400" height="300">
+    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/list-customer.png" alt="customer-list" width="400" height="300">
+    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/delete.png" alt="delete" width="400" height="300">
+    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/create.png" alt="create" width="400" height="300">
+    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/update.png" alt="update" width="400" height="300">
 </div>
 
 ## Angular
