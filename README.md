@@ -9,7 +9,6 @@ The customerApi project is an ongoing development initiative focused on creating
     <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/list-customer.png" alt="customer-list" width="400" height="300">
     <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/delete.png" alt="delete" width="400" height="300">
     <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/create.png" alt="create" width="400" height="300">
-    <img src="https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/update.png" alt="update" width="400" height="300">
 </div>
 
 ## Angular
