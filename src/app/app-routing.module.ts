@@ -21,11 +21,11 @@ import { TechnicianDeleteComponent } from './components/technician/technician-de
 import { ServiceCallListComponent } from './components/serviceCall/service-call-list/service-call-list.component';
 import { ServiceCallAddComponent } from './components/serviceCall/service-call-add/service-call-add.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ServiceCallUpdateComponent } from './components/serviceCall/service-call-update/service-call-update.component';
 
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'footer', component: FooterComponent },
   {
     path: '', component: NavComponent, children: [
       { path: 'home', component: HomeComponent },
@@ -46,7 +46,8 @@ const routes: Routes = [
       { path: 'technician/delete/:id', component: TechnicianDeleteComponent },
       { path: 'serviceCall', component: ServiceCallListComponent },
       { path: 'serviceCall/create', component: ServiceCallAddComponent },
-
+      { path: 'footer', component: FooterComponent },
+      { path: 'serviceCall/update/:id', component: ServiceCallUpdateComponent },
     ]
   }
 ];

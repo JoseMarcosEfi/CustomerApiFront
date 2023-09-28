@@ -52,6 +52,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { DatePipe } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
+import { ServiceCallUpdateComponent } from './components/serviceCall/service-call-update/service-call-update.component';
 
 
 
@@ -82,6 +83,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ServiceCallListComponent,
     ServiceCallAddComponent,
     FooterComponent,
+    ServiceCallUpdateComponent,
   ],
   imports: [
     BrowserModule,

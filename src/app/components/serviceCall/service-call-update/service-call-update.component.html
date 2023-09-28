@@ -1,0 +1,116 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1 class="fullWidth">Update ServiceCall</h1>
+        <img src="assets/img/serviceCall-add.svg" alt="ServiceCallUpdate">
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Select Customer</mat-label>
+            <mat-select [(ngModel)]="serviceCall.idCustomer" name="idCustomer" required placeholder="Select Type"
+                [formControl]="Customer">
+                <mat-option *ngFor="let option of CustomerOptions" [value]="option.id">{{ option.name}}
+                </mat-option>
+            </mat-select>
+            <mat-icon matSuffix>construction</mat-icon>
+            <mat-error *ngIf="Customer.invalid && (Customer.dirty || Customer.touched)">
+                <span *ngIf="Customer.errors?.['required']">This field is required.</span>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Select Tech</mat-label>
+            <mat-select [(ngModel)]="serviceCall.idTechnician" name="idTechnician" [formControl]="Technician" required
+                placeholder="Select Tech">
+                <mat-option *ngFor="let option of TechnicianOptions" [value]="option.id">{{ option.name}}
+                </mat-option>
+            </mat-select>
+            <mat-icon matSuffix>construction</mat-icon>
+            <mat-error *ngIf="Technician.invalid && (Technician.dirty || Technician.touched)">
+                <span *ngIf="Technician.errors?.['required']">This field is required.</span>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Title</mat-label>
+            <input [(ngModel)]="serviceCall.title" name="title" [formControl]="title" required matInput
+                placeholder="Ex.. spring" maxlength="30" minlength="3">
+            <mat-icon matSuffix>history_edu</mat-icon>
+            <mat-error *ngIf="title.invalid && (title.dirty || title.touched)">
+                <span *ngIf="title.errors?.['required']">This field is required.</span>
+                <span *ngIf="title.errors?.['minlength']">You have reached the minimum number of
+                    characters.</span>
+                <span *ngIf="title.errors?.['maxlength']">You have reached the maximum number of
+                    characters.</span>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Observations</mat-label>
+            <input [(ngModel)]="serviceCall.observations" name="observations" [formControl]="observations" required
+                matInput placeholder="Ex.. spring" maxlength="30" minlength="3">
+            <mat-icon matSuffix>history_edu</mat-icon>
+            <mat-error *ngIf="observations.invalid && (observations.dirty || observations.touched)">
+                <span *ngIf="observations.errors?.['required']">This field is required.</span>
+                <span *ngIf="observations.errors?.['minlength']">You have reached the minimum number of
+                    characters.</span>
+                <span *ngIf="observations.errors?.['maxlength']">You have reached the maximum number of
+                    characters.</span>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>value</mat-label>
+            <input [(ngModel)]="serviceCall.value" type="number" min="0" max="1000" name="value" [formControl]="value"
+                required matInput placeholder="0">
+            <mat-icon matSuffix>pin</mat-icon>
+            <mat-error *ngIf="value.invalid && (value.dirty || value.touched)">
+                <span *ngIf="value.errors?.['required']">This field is required.</span>
+                <span *ngIf="value.errors?.['min']">The value must be greater than or equal to 0.</span>
+                <span *ngIf="value.errors?.['max']">The value must be less than or equal to 1000.</span>
+                <span *ngIf="value.errors?.['maxlength']">The value must be less than or equal to 100000.</span>
+            </mat-error>
+        </mat-form-field>
+
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Priority</mat-label>
+            <mat-select [(ngModel)]="serviceCall.priority" name="priority" [formControl]="priority" required
+                placeholder="Select Type">
+                <mat-option *ngFor="let option of priorityOptions" [value]="option.value">{{ option.viewValue }}
+                </mat-option>
+            </mat-select>
+            <mat-icon matSuffix>construction</mat-icon>
+            <mat-error *ngIf="priority.invalid && (priority.dirty || priority.touched)">
+                <span *ngIf="priority.errors?.['required']">This field is required.</span>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Status</mat-label>
+            <mat-select [(ngModel)]="serviceCall.status" name="status" [formControl]="status" required
+                placeholder="Select Type">
+                <mat-option *ngFor="let option of statusOptions" [value]="option.value">{{ option.viewValue }}
+                </mat-option>
+            </mat-select>
+            <mat-icon matSuffix>construction</mat-icon>
+            <mat-error *ngIf="status.invalid && (status.dirty || status.touched)">
+                <span *ngIf="status.errors?.['required']">This field is required.</span>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="calendar-serviceCall" appearance="fill">
+            <mat-label>Choose a Closing date</mat-label>
+            <input [(ngModel)]="serviceCall.closingDate" matInput [matDatepicker]="picker" name="closingDate"
+                [formControl]="closingDate">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="closingDate.invalid && (closingDate.dirty || closingDate.touched)">
+                <span *ngIf="closingDate.errors?.['required']">This field is required.</span>
+            </mat-error>
+        </mat-form-field>
+
+        <button (click)="update()" [disabled]="!validaCampos()" class="fullWidth mat-elevation-z4" mat-flat-button
+            color="primary">Update</button>
+        <button routerLink="../" class="fullWidth mat-elevation-z4" mat-stroked-button color="warn">Cancel</button>
+    </form>
+    <p class="fullWidth">By José Marcos</p>
+</div>
