@@ -1,4 +1,16 @@
-# Helpdesk
+# Customer Project
+
+The customerApi project is an ongoing development initiative focused on creating a comprehensive business management system. This versatile system is designed to efficiently handle multiple facets of business operations, including employee management, client relationships, inventory tracking, service call management, and billing processes.
+
+# Prints:
+
+![home](https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/home.png)
+![customer-list](https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/list-customer.png)
+![delete](https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/delete.png)
+![create](https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/create.png)
+![update](https://github.com/SakakibaraKun/CustomerApiFront/blob/main/project%20imgs/update.png)
+
+## Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
@@ -14,14 +26,30 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Key Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Customer Management:** The system allows for the seamless organization and management of customer profiles, facilitating streamlined communication and personalized services.
 
-## Running end-to-end tests
+2. **Employee Administration:** Effortlessly oversee your workforce, manage roles and responsibilities, and optimize team efficiency.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Inventory and Stock Control:** Keep track of your products and goods with precision, ensuring that your inventory remains up-to-date and well-managed.
 
-## Further help
+4. **Service Call Management:** Maintain a structured workflow for handling customer service calls, ensuring prompt responses and efficient issue resolution.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. **Billing and Invoicing:** Simplify your billing process, generate invoices, and keep track of financial transactions with ease.
+
+## Current Status
+
+The project is currently in progress, with ongoing development efforts aimed at enhancing functionality, user experience, and system reliability. We are actively working to bring you a robust and user-friendly business management solution that will streamline your operations and enhance productivity.
+
+## Technologies used:
+
+<div>
+
+[![Skills project](https://skillicons.dev/icons?i=html,css,angular,ts&perline=4)](https://skillicons.dev)
+
+</div>
+
+## BackEnd project:
+
+<a href="https://github.com/JoseMarcosEfi/CustomerApiFront" >BackEnd CustomerApi</a>
