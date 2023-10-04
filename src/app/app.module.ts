@@ -54,6 +54,7 @@ import { DatePipe } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { ServiceCallUpdateComponent } from './components/serviceCall/service-call-update/service-call-update.component';
 import { ServiceCallDeleteComponent } from './components/serviceCall/service-call-delete/service-call-delete.component';
+import { ServiceCallViewComponent } from './components/serviceCall/service-call-view/service-call-view.component';
 
 
 
@@ -86,6 +87,7 @@ import { ServiceCallDeleteComponent } from './components/serviceCall/service-cal
     FooterComponent,
     ServiceCallUpdateComponent,
     ServiceCallDeleteComponent,
+    ServiceCallViewComponent,
   ],
   imports: [
     BrowserModule,
