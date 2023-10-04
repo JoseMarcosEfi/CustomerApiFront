@@ -1,0 +1,58 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1 class="fullWidth">Delete ServiceCall</h1>
+        <img src="assets/img/stock-delete.svg" alt="ServiceCallDeleted">
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Customer</mat-label>
+            <input [(ngModel)]="serviceCall.nameCustomer" name="nameCustomer" disabled matInput>
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Tech</mat-label>
+            <input [(ngModel)]="serviceCall.nameTechnician" name="nameTechnician" disabled matInput>
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Title</mat-label>
+            <input [(ngModel)]="serviceCall.title" name="title" disabled matInput>
+            <mat-icon matSuffix>title</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Observations</mat-label>
+            <input [(ngModel)]="serviceCall.observations" name="observations" disabled matInput>
+            <mat-icon matSuffix>history_edu</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>value</mat-label>
+            <input [(ngModel)]="serviceCall.value" name="value" disabled matInput>
+            <mat-icon matSuffix>pin</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Priority</mat-label>
+            <input [(ngModel)]="serviceCall.priority" name="priority" disabled matInput>
+            <mat-icon matSuffix>priority_high</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>Status</mat-label>
+            <input [(ngModel)]="serviceCall.status" name="status" disabled matInput>
+            <mat-icon matSuffix>find_replace</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="fullWidth" appearance="fill">
+            <mat-label>OpeningDate</mat-label>
+            <input [(ngModel)]="serviceCall.openingDate" name="openingDate" disabled matInput>
+            <mat-icon matSuffix>calendar_today</mat-icon>
+        </mat-form-field>
+
+        <button (click)="delete()" class="fullWidth mat-elevation-z4" mat-flat-button color="primary">Delete</button>
+        <button routerLink="../../" class="fullWidth mat-elevation-z4" mat-stroked-button color="warn">Cancel</button>
+    </form>
+    <p class="fullWidth">By José Marcos</p>
+</div>

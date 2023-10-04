@@ -7,5 +7,8 @@ export interface ServiceCall {
     observations: string,
     title: string,
     value: number,
-    closingDate: any
+    closingDate: any,
+    openingDate?: any,
+    nameCustomer?: string,
+    nameTechnician?: string
 }

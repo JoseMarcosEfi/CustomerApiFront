@@ -22,6 +22,7 @@ import { ServiceCallListComponent } from './components/serviceCall/service-call-
 import { ServiceCallAddComponent } from './components/serviceCall/service-call-add/service-call-add.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ServiceCallUpdateComponent } from './components/serviceCall/service-call-update/service-call-update.component';
+import { ServiceCallDeleteComponent } from './components/serviceCall/service-call-delete/service-call-delete.component';
 
 
 const routes: Routes = [
@@ -48,6 +49,7 @@ const routes: Routes = [
       { path: 'serviceCall/create', component: ServiceCallAddComponent },
       { path: 'footer', component: FooterComponent },
       { path: 'serviceCall/update/:id', component: ServiceCallUpdateComponent },
+      { path: 'serviceCall/delete/:id', component: ServiceCallDeleteComponent },
     ]
   }
 ];
