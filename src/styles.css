@@ -1,8 +1,11 @@
 @import '../node_modules/ngx-toastr/toastr.css';
 
 
+
+
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #001220; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
 .container {
     width: 90%;

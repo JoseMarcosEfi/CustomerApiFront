@@ -55,6 +55,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ServiceCallUpdateComponent } from './components/serviceCall/service-call-update/service-call-update.component';
 import { ServiceCallDeleteComponent } from './components/serviceCall/service-call-delete/service-call-delete.component';
 import { ServiceCallViewComponent } from './components/serviceCall/service-call-view/service-call-view.component';
+import { BillingCreateComponent } from './components/billing/billing-create/billing-create.component';
+import { BillingListComponent } from './components/billing/billing-list/billing-list.component';
 
 
 
@@ -88,6 +90,8 @@ import { ServiceCallViewComponent } from './components/serviceCall/service-call-
     ServiceCallUpdateComponent,
     ServiceCallDeleteComponent,
     ServiceCallViewComponent,
+    BillingCreateComponent,
+    BillingListComponent,
   ],
   imports: [
     BrowserModule,
