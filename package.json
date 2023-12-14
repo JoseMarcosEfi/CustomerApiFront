@@ -1,6 +1,6 @@
 {
-  "name": "helpdesk",
-  "version": "0.0.0",
+  "name": "customerapi",
+  "version": "1.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -28,7 +28,6 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.0.1",
     "@angular/cli": "~16.0.1",
     "@angular/compiler-cli": "^16.0.0",
     "@angular/localize": "^16.0.1",
