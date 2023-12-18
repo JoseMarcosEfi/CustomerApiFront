@@ -57,6 +57,7 @@ import { ServiceCallDeleteComponent } from './components/serviceCall/service-cal
 import { ServiceCallViewComponent } from './components/serviceCall/service-call-view/service-call-view.component';
 import { BillingCreateComponent } from './components/billing/billing-create/billing-create.component';
 import { BillingListComponent } from './components/billing/billing-list/billing-list.component';
+import { BillingDeleteComponent } from './components/billing/billing-delete/billing-delete.component';
 
 
 
@@ -92,6 +93,7 @@ import { BillingListComponent } from './components/billing/billing-list/billing-
     ServiceCallViewComponent,
     BillingCreateComponent,
     BillingListComponent,
+    BillingDeleteComponent,
   ],
   imports: [
     BrowserModule,

@@ -41,18 +41,15 @@
             </ng-container>
             <ng-container matColumnDef="action">
                 <th mat-header-cell *matHeaderCellDef>Action</th>
-                <td mat-cell *matCellDef="let serviceCall">
-                    <a routerLink="update/{{ serviceCall.id }}">
-                        <i class="material-icons edit">edit</i>
-                    </a>
-                    <a routerLink="delete/{{ serviceCall.id }}">
+                <!-- <td mat-cell *matCellDef="let serviceCall">
+                    <a routerLink="delete/{{ billing.id }}">
                         <i class="material-icons delete">delete</i>
                     </a>
-                    <a routerLink="view/{{ serviceCall.id }}">
+                    <a routerLink="view/{{ billing.id }}">
                         <i class="material-icons visibility">visibility</i>
                     </a>
 
-                </td>
+                </td>-->
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
