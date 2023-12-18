@@ -55,7 +55,7 @@ const routes: Routes = [
       { path: 'serviceCall/delete/:id', component: ServiceCallDeleteComponent },
       { path: 'serviceCall/view/:id', component: ServiceCallViewComponent },
       { path: 'billings', component: BillingListComponent },
-      { path: 'billigs/create', component: BillingCreateComponent },
+      { path: 'billings/create', component: BillingCreateComponent },
 
     ]
   }

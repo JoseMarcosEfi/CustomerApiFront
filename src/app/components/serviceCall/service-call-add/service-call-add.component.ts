@@ -77,8 +77,6 @@ export class ServiceCallAddComponent {
       this.serviceCall.closingDate, 'dd/MM/yyyy'
     );
 
-    console.log('Objeto this.serviceCall antes da solicitação:', this.serviceCall);
-
     this.service.create(this.serviceCall).subscribe(() => {
       this.toast.success('Successfully Created serviceCall ', 'Created');
       this.router.navigate(['serviceCall'])
