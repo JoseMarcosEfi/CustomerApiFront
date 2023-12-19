@@ -1,13 +1,17 @@
 footer{
 background-color: #001220;
 margin: 0;
-position: fixed;
+position: relative;
 bottom: 0;
 width: 100%;
+background-image: url("../../../assets/img/moon-unsplash.jpg");
+border-top: 1px  solid #d26a50;
+
 
 
 
 }
 .text-body-secondary {
-    color: white !important;
+    color: #d26a50 !important;
 }
+

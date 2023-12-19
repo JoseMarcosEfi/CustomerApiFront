@@ -6,7 +6,6 @@ background-color: #001220;
 
 .sidenav{
     width: 13rem;
-    color: greenyellow;
     background-image: url("../../../assets/img/moon-unsplash.jpg");
     border-right: 1px  solid #d26a50;
 }
