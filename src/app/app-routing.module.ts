@@ -26,6 +26,7 @@ import { ServiceCallDeleteComponent } from './components/serviceCall/service-cal
 import { ServiceCallViewComponent } from './components/serviceCall/service-call-view/service-call-view.component';
 import { BillingCreateComponent } from './components/billing/billing-create/billing-create.component';
 import { BillingListComponent } from './components/billing/billing-list/billing-list.component';
+import { BillingDeleteComponent } from './components/billing/billing-delete/billing-delete.component';
 
 
 const routes: Routes = [
@@ -56,6 +57,7 @@ const routes: Routes = [
       { path: 'serviceCall/view/:id', component: ServiceCallViewComponent },
       { path: 'billings', component: BillingListComponent },
       { path: 'billings/create', component: BillingCreateComponent },
+      { path: 'billings/delete/:id', component: BillingDeleteComponent}
 
     ]
   }

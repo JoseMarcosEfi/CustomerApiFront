@@ -12,7 +12,7 @@ import { BillingService } from 'src/app/services/billing.service';
 export class BillingListComponent {
   ELEMENT_DATA: Billing[] = []
 
-  displayedColumns: string[] = ['totalValue', 'initialDateBilling', 'finalDateBilling', 'nameCustomer', 'nameTechnician'];
+  displayedColumns: string[] = ['totalValue', 'initialDateBilling', 'finalDateBilling', 'nameCustomer', 'nameTechnician', 'action'];
   dataSource = new MatTableDataSource<Billing>(this.ELEMENT_DATA);
 
 

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+ import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ServiceCall } from 'src/app/models/serviceCall';
