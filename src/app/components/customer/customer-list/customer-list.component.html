@@ -1,6 +1,6 @@
 <div class="container">
 
-    <h1>Customer List</h1>
+    <h1 class="h1TitleList">Customer List</h1>
 
     <div>
         <button mat-button color="accent" routerLink="create" class="bootonAddCreate">
@@ -9,7 +9,7 @@
     </div>
     <br />
     <div>
-        <mat-form-field>
+        <mat-form-field class="filterTablesList">
             <mat-label>Filter</mat-label>
             <input matInput (keyup)="applyFilter($event)" placeholder="           Ex: ze das couves" #input>
         </mat-form-field>

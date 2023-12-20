@@ -1,8 +1,25 @@
 .bootonAddCreate{
-    width: 100%;
+    width: 50%;
     height: 1%;
     font-size: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1%;
     border-radius: 6rem 1rem 6rem 1rem;
     text-shadow: 5px 5px 5px #d26a50;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 1.5rem;
+}
+.h1TitleList{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 6rem 1rem 6rem 1rem;
+    text-shadow: 5px 5px 5px #d26a50;
+}
+.filterTablesList mat-form-field{
+    width: 100%;
+    background-color: rgba(210, 106, 80, 0.03)!important;
 }

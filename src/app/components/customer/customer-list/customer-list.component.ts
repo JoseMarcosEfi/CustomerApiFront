@@ -1,8 +1,9 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import { Customer } from 'src/app/models/customer'
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginator, MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginator';
 import { CustomerService } from 'src/app/services/customer.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-customer-list',
@@ -11,7 +12,7 @@ import { CustomerService } from 'src/app/services/customer.service';
 
 })
   
-export class CustomerListComponent implements OnInit{
+export class CustomerListComponent implements AfterViewInit, MatPaginatorIntl{
 
   ELEMENT_DATA: Customer[] =[]
    
@@ -22,10 +23,23 @@ export class CustomerListComponent implements OnInit{
     private service: CustomerService
   ) { }
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  changes: Subject<void>;
+  itemsPerPageLabel = $localize`Items per page:`;
+  nextPageLabel= 'Next page';
+  previousPageLabel= 'Previous page';
+  firstPageLabel = $localize`First page`;
+  lastPageLabel= $localize`Last page`;
 
-  ngOnInit(): void { 
+  getRangeLabel(page: number, pageSize: number, length: number): string {
+    if (length === 0) {
+      return $localize`Page 1 of 1`;
+    }
+    const amountPages = Math.ceil(length / pageSize);
+    return $localize`Page ${page + 1} of ${amountPages}`;
   }
+
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
